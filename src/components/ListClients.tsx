@@ -1,12 +1,7 @@
 import { useEffect, useState } from "react"
 import ClientService from "../service/ClientService";
-
-interface IClient {
-    id: number;
-    nombre: string;
-    apellido: string;
-    email: string;
-  }
+import { Link } from "react-router-dom";
+import { IClient } from "../types/IClient";
 
 export const ListClients = () => {
     const [clientes, setCLientes] = useState<IClient[]>([]);
@@ -22,6 +17,7 @@ export const ListClients = () => {
   return (
     <div className="container">
         <h2 className="text-center">Lista de clientes</h2>
+        <Link to='/add-cliente' className="btn btn-primary mb-2">Agregar cliente</Link>
         <table className="table table-bordered table-striped">
             <thead>
                 <th>ID</th>
