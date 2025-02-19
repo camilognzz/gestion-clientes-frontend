@@ -16,6 +16,7 @@ function App() {
             <Route path='/' element={<ListClients />}></Route>
             <Route path='/clientes' element={<ListClients />}></Route>
             <Route path='/add-cliente' element={<AddClient />}></Route>
+            <Route path='/edit-cliente/:id' element={<AddClient />}></Route>
           </Routes>
         </div>
         <Footer />

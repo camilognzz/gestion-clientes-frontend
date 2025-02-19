@@ -24,6 +24,7 @@ export const ListClients = () => {
                 <th>Nombre</th>
                 <th>Apellido</th>
                 <th>Email</th>
+                <th>Acciones</th>
             </thead>
             <tbody>
                 {
@@ -34,6 +35,9 @@ export const ListClients = () => {
                                 <td>{cliente.nombre}</td>
                                 <td>{cliente.apellido}</td>
                                 <td>{cliente.email}</td>
+                                <td>
+                                    <Link className="btn btn-info" to={`/edit-cliente/${cliente.id}`}>Actualizar</Link>
+                                </td>
                             </tr>
                     )
                 }
