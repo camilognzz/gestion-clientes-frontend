@@ -1,6 +1,6 @@
 import axios from "axios";
 import { IClient } from "../types/IClient";
-const CLIENT_BASE_REST_API_URL = `${process.env.REACT_APP_API_URL}/api/v1/clientes`;
+const CLIENT_BASE_REST_API_URL = 'https://gestion-clientes-backend-l99e.onrender.com/api/v1/clientes';
 console.log("API URL usada en React:", CLIENT_BASE_REST_API_URL);
 
 class ClientService {
