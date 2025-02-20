@@ -1,6 +1,7 @@
 import axios from "axios";
 import { IClient } from "../types/IClient";
 const CLIENT_BASE_REST_API_URL = `${process.env.REACT_APP_API_URL}/api/v1/clientes`;
+console.log("API URL usada en React:", CLIENT_BASE_REST_API_URL);
 
 class ClientService {
   getAllClients() {
